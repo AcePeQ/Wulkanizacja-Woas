@@ -1,0 +1,27 @@
+.svg path {
+  stroke: var(--color-background-2);
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+
+  stroke-width: 3px;
+
+  animation: dash 3s linear forwards, filling 3s ease-in forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes filling {
+  0%,
+  70% {
+    fill: #eee;
+    fill-opacity: 0;
+  }
+  100% {
+    fill: #eee;
+    fill-opacity: 1;
+  }
+}
