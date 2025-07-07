@@ -1,3 +1,17 @@
+:root {
+  --color-background-1: #222831;
+  --color-background-2: #393e46;
+  --color-background-3: #eee;
+  --color-background-3: #fff;
+
+  --color-accent-1: #ffd369;
+
+  --color-text-1: #eee;
+  --color-text-2: #fff;
+  --color-text-3: #393e46;
+  --color-text-4: #222831;
+}
+
 *,
 *::before,
 *::after {
@@ -18,8 +32,12 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   line-height: 1.5;
+
+  background-color: var(--color-background-3);
+  color: var(--color-background-1);
 
   -webkit-font-smoothing: antialiased;
 }
