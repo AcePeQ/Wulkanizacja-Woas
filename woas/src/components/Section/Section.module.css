@@ -4,3 +4,12 @@
     width: 100%;
   }
 }
+
+.hero {
+  background-image: url();
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  min-height: calc(100dvh - var(--nav-height));
+  max-height: calc(100dvh - var(--nav-height));
+}

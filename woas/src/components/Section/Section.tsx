@@ -4,11 +4,16 @@ import styles from "./Section.module.css";
 type SectionProps = {
   children: ReactElement;
   sectionClass: string;
+  overlay: string;
 };
 
-function Section({ children, sectionClass }: SectionProps) {
+function Section({ children, sectionClass, overlay }: SectionProps) {
   return (
-    <section className={`${styles.section} ${styles[sectionClass]}`}>
+    <section
+      className={`${styles.section} ${styles[sectionClass]} ${
+        overlay ? styles[overlay] : ""
+      }`}
+    >
       {children}
     </section>
   );
