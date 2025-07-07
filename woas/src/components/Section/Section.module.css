@@ -6,10 +6,20 @@
 }
 
 .hero {
-  background-image: url();
+  padding-top: var(--nav-height);
+
+  background-image: url("hero-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 
-  min-height: calc(100dvh - var(--nav-height));
-  max-height: calc(100dvh - var(--nav-height));
+  min-height: calc(100dvh);
+  max-height: calc(100dvh);
+}
+
+.dark {
+  border-image-source: linear-gradient(
+    rgba(0, 0, 0, 0.9),
+    rgba(34, 40, 49, 0.85)
+  );
+  border-image-slice: fill 1;
 }
