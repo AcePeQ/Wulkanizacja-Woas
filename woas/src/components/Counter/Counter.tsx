@@ -34,7 +34,6 @@ function Counter({ text, value, plusSign }: CounterProps) {
   useEffect(() => {
     springCount.on("change", (latest) => {
       if (ref.current) {
-        console.log(latest);
         ref.current.textContent = latest.toFixed(0);
       }
     });

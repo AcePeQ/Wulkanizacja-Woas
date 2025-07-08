@@ -1,7 +1,4 @@
 .header {
-  background-color: transparent;
-  color: var(--color-text-1);
-
   position: fixed;
   justify-content: space-between;
 
@@ -13,4 +10,19 @@
   display: flex;
 
   padding: 1.5rem 3rem;
+
+  transition: background-color 0.3s;
+}
+
+.top {
+  background-color: transparent;
+  color: var(--color-text-1);
+
+  border-bottom: 2px solid transparent;
+}
+
+.under {
+  background-color: var(--color-background-1);
+  color: var(--color-text-1);
+  border-bottom: 2px solid var(--color-background-2);
 }
