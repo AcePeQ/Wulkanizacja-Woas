@@ -1,4 +1,11 @@
+.article {
+  display: flex;
+
+  gap: 8rem;
+}
+
 .aboutus {
+  flex: 2;
   max-width: 75ch;
 
   h2 {
@@ -14,6 +21,22 @@
     font-size: 2rem;
     font-weight: 500;
     text-align: justify;
+  }
+}
+
+.imageWrapper {
+  align-self: stretch;
+  flex: 1;
+
+  background-color: #e6e9ef;
+  border-radius: 66px 18px 66px 18px;
+  box-shadow: 9px 9px 0px 0px var(--color-accent-1),
+    18px 18px 0px 0px var(--color-background-1);
+
+  overflow: hidden;
+
+  img {
+    height: 100%;
   }
 }
 

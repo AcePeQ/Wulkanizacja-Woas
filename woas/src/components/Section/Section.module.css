@@ -26,6 +26,22 @@
   border-image-slice: fill 1;
 }
 
+.dark-reverse {
+  border-image-source: linear-gradient(
+    rgba(34, 40, 49, 0.85),
+    rgba(0, 0, 0, 0.9)
+  );
+  border-image-slice: fill 1;
+}
+
 .aboutus {
   padding: 10rem 0;
+}
+
+.light {
+  border-image-source: linear-gradient(
+    rgba(238, 238, 238, 0.9),
+    rgba(255, 255, 255, 0.9)
+  );
+  border-image-slice: fill 1;
 }

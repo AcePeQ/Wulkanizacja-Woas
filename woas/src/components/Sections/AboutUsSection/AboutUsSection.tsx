@@ -12,23 +12,29 @@ const counters = [
 
 function AboutUsSection() {
   return (
-    <Section sectionClass="aboutus">
+    <Section sectionClass="aboutus" overlay="light">
       <div className={styles.container}>
-        <article className={styles.aboutus}>
-          <h2>
-            Poznaj nas
-            <AnimatedLine />
-          </h2>
+        <article className={styles.article}>
+          <div className={styles.aboutus}>
+            <h2>
+              Poznaj nas
+              <AnimatedLine />
+            </h2>
 
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-            dolores at voluptatibus itaque accusantium aliquid nostrum
-            praesentium laudantium odio sed sapiente inventore vel placeat
-            deleniti enim, reprehenderit unde maxime similique? itaque
-            accusantium aliquid nostrum praesentium laudantium odio sed sapiente
-            inventore vel placeat deleniti enim, reprehenderit unde maxime
-            similique?
-          </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+              dolores at voluptatibus itaque accusantium aliquid nostrum
+              praesentium laudantium odio sed sapiente inventore vel placeat
+              deleniti enim, reprehenderit unde maxime similique? itaque
+              accusantium aliquid nostrum praesentium laudantium odio sed
+              sapiente inventore vel placeat deleniti enim, reprehenderit unde
+              maxime similique?
+            </p>
+          </div>
+
+          <figure className={styles.imageWrapper}>
+            <img src="about-us-bg.jpg" />
+          </figure>
         </article>
         <div className={styles.counters}>
           {counters.map((counter) => (
