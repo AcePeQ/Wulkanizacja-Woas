@@ -7,6 +7,7 @@ function AnimatedLine() {
       initial={{ width: 0 }}
       whileInView={{ width: "100%" }}
       transition={{ type: "spring", duration: 3, bounce: 0.4 }}
+      viewport={{ once: true }}
       className={styles.line}
       aria-disabled={true}
     ></motion.div>
