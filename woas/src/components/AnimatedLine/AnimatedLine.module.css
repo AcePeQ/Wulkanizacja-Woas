@@ -1,0 +1,6 @@
+.line {
+  height: 5px;
+
+  background-color: var(--color-accent-1);
+  border-radius: 6px;
+}

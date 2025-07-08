@@ -1,0 +1,14 @@
+.counter {
+  display: flex;
+  flex-direction: column-reverse;
+
+  dt {
+    font-size: 2.4rem;
+    font-weight: 500;
+  }
+
+  dd {
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+}

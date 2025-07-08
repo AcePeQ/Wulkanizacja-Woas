@@ -4,7 +4,7 @@ import styles from "./Section.module.css";
 type SectionProps = {
   children: ReactElement;
   sectionClass: string;
-  overlay: string;
+  overlay?: string;
 };
 
 function Section({ children, sectionClass, overlay }: SectionProps) {
