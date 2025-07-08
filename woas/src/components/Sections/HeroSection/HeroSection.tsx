@@ -1,7 +1,7 @@
 import styles from "./HeroSection.module.css";
 
-import AnimatedHeading from "../AnimatedHeader/AnimatedHeading";
-import Section from "../Section/Section";
+import AnimatedHeading from "../../AnimatedHeader/AnimatedHeading";
+import Section from "../../Section/Section";
 import { motion } from "motion/react";
 
 function HeroSection() {

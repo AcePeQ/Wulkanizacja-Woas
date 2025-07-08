@@ -9,7 +9,7 @@ function Header() {
     <motion.header
       initial={{ y: "-100%" }}
       animate={{ y: "0%" }}
-      transition={{ duration: 2, delay: 1, ease: "easeInOut" }}
+      transition={{ duration: 1.5, delay: 1, ease: "anticipate" }}
       className={styles.header}
     >
       <Logo />

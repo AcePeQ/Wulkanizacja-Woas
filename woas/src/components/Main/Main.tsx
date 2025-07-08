@@ -1,4 +1,4 @@
-import HeroSection from "../HeroSection/HeroSection";
+import HeroSection from "../Sections/HeroSection/HeroSection";
 
 function Main() {
   return (
