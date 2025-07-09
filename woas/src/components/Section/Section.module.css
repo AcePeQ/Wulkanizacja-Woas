@@ -18,6 +18,18 @@
   padding: var(--nav-height) 0;
 }
 
+.aboutus {
+  padding: 10rem 0;
+}
+
+.contact {
+  padding: 15rem 0;
+
+  background-image: url("hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .dark {
   border-image-source: linear-gradient(
     rgba(0, 0, 0, 0.9),
@@ -32,10 +44,6 @@
     rgba(0, 0, 0, 0.9)
   );
   border-image-slice: fill 1;
-}
-
-.aboutus {
-  padding: 10rem 0;
 }
 
 .light {
