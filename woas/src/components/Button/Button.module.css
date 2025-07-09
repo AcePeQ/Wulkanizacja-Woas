@@ -13,6 +13,14 @@
   font-weight: 600;
 
   cursor: pointer;
+
+  gap: 1rem;
+
+  transition: all 0.4s;
+
+  svg {
+    transition: all 0.4s;
+  }
 }
 
 .primary {
@@ -21,4 +29,9 @@
   border-radius: 4px;
 
   box-shadow: 0 4px 8px var(--color-accent-1);
+}
+
+.button:hover svg,
+.button:active svg {
+  transform: scale(1.1) rotate(30deg);
 }
