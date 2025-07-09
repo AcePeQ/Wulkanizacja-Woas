@@ -10,7 +10,6 @@ function Header() {
 
   useEffect(() => {
     function handleScroll() {
-      console.log(window.pageYOffset);
       if (window.pageYOffset === 0) {
         setIsOnTop(true);
       } else if (window.pageYOffset >= 220) {
