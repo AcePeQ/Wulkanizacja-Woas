@@ -1,3 +1,4 @@
+import Button from "../Button/Button";
 import Logo from "../Logo/Logo";
 import styles from "./Footer.module.css";
 
@@ -6,7 +7,11 @@ const year = new Date().getFullYear();
 function Footer() {
   return (
     <footer className={styles.footer}>
-      <div className={styles.left}>Telefon</div>
+      <div className={styles.left}>
+        <Button buttonContainer="a" href="tel:664 135 742">
+          664 135 742
+        </Button>
+      </div>
       <div className={styles.middle}>
         <Logo isLogoFooter />
       </div>
