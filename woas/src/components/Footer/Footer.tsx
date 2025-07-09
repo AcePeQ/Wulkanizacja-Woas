@@ -1,6 +1,8 @@
 import Logo from "../Logo/Logo";
 import styles from "./Footer.module.css";
 
+const year = new Date().getFullYear();
+
 function Footer() {
   return (
     <footer className={styles.footer}>
@@ -9,7 +11,7 @@ function Footer() {
         <Logo isLogoFooter />
       </div>
       <div className={styles.right}>
-        <p>&copy; Copyright WOAS 2025</p>
+        <p>&copy; Copyright WOAS {year}</p>
         <p>
           Made by:{" "}
           <a className={styles.madeByLink} href="#">

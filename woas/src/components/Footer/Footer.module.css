@@ -17,6 +17,13 @@
   }
 }
 
+.left,
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .left {
   background-color: var(--color-background-1);
 
@@ -30,4 +37,24 @@
   padding-inline: 12rem;
 
   clip-path: polygon(0 0, 100% 0, 100% 100%, 7.5% 100%);
+
+  flex-direction: column;
+  gap: 0.5rem;
+
+  font-size: 1.4rem;
+}
+
+.madeByLink:link,
+.madeByLink:visited {
+  display: inline-block;
+
+  color: inherit;
+  text-underline-offset: 4px;
+
+  transition: all 0.3s;
+}
+
+.madeByLink:hover,
+.madeByLink:active {
+  color: var(--color-accent-1);
 }
