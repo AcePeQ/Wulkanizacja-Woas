@@ -1,0 +1,33 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: var(--footer-height);
+
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 2.5rem;
+
+  color: var(--color-text-1);
+
+  & > * {
+    padding: 2rem 0;
+  }
+}
+
+.left {
+  background-color: var(--color-background-1);
+
+  padding-inline: 12rem;
+
+  clip-path: polygon(0 0, 100% 0, 92.5% 100%, 0% 100%);
+}
+
+.right {
+  background-color: var(--color-background-1);
+  padding-inline: 12rem;
+
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 7.5% 100%);
+}

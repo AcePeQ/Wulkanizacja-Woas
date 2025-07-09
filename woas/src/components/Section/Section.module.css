@@ -23,7 +23,7 @@
 }
 
 .contact {
-  padding: 15rem 0;
+  padding: 15rem 0 calc(15rem + var(--footer-height));
 
   background-image: url("contact-bg.jpg");
   background-size: cover;

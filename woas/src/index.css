@@ -12,6 +12,7 @@
   --color-text-4: #222831;
 
   --nav-height: 87px;
+  --footer-height: 100px;
 }
 
 *,
@@ -24,6 +25,8 @@
 
 html {
   font-size: 62.5%;
+
+  position: relative;
 }
 
 @media (prefers-reduced-motion: no-preference) {
