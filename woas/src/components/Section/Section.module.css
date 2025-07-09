@@ -25,7 +25,7 @@
 .contact {
   padding: 15rem 0;
 
-  background-image: url("hero-bg.jpg");
+  background-image: url("contact-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -48,8 +48,8 @@
 
 .light {
   border-image-source: linear-gradient(
-    rgba(238, 238, 238, 0.9),
-    rgba(255, 255, 255, 0.9)
+    rgba(238, 238, 238, 0.85),
+    rgba(255, 255, 255, 0.85)
   );
   border-image-slice: fill 1;
 }
