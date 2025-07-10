@@ -30,6 +30,13 @@
   background-repeat: no-repeat;
 }
 
+.mobilecar {
+  padding: 15rem 0;
+
+  background-color: var(--color-background-1);
+  color: var(--color-text-1);
+}
+
 .dark {
   border-image-source: linear-gradient(
     rgba(0, 0, 0, 0.9),
