@@ -27,11 +27,22 @@ function HeroSection() {
           Przyjedz do nas lub zadzwoń a to my przybędziemy z pomocą
         </motion.h2>
 
-        <p className={styles.buttonWrapper}>
+        <motion.p
+          initial={{ y: "200px", opacity: 0 }}
+          animate={{ y: "0px", opacity: 1 }}
+          transition={{
+            duration: 6,
+            delay: 2,
+            type: "spring",
+            damping: 15,
+            mass: 2,
+          }}
+          className={styles.buttonWrapper}
+        >
           <Button buttonContainer="a" href="#kontakt" buttonStyle="primary">
             Zadzwoń Teraz
           </Button>
-        </p>
+        </motion.p>
       </div>
     </Section>
   );
