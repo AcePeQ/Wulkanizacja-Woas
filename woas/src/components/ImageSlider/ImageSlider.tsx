@@ -26,10 +26,14 @@ function ImageSlider({
       <AnimatePresence>
         <motion.img
           key={currentImage.id}
-          initial={{ y: "-100%" }}
+          initial={{ y: "-100%", scale: 1 }}
           animate={{ y: "0%" }}
-          exit={{ y: "100%" }}
-          transition={{ type: "tween" }}
+          exit={{
+            borderRadius: "66px 18px 66px 18px;",
+            scale: [1, 1.1, 0],
+            transition: { ease: "easeInOut", duration: 1.25 },
+          }}
+          transition={{ ease: "anticipate", duration: 2 }}
           src={`${currentImage.path}.${currentImage.format}`}
           alt={currentImage.alt}
         />
