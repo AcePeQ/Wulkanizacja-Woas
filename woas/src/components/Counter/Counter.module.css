@@ -2,12 +2,18 @@
   display: flex;
   flex-direction: column-reverse;
 
+  min-width: 110px;
+
   dt {
     font-size: 2.4rem;
     font-weight: 500;
   }
 
   dd {
+    display: flex;
+    align-items: center;
+    gap: 0.5px;
+
     font-size: 3.2rem;
     font-weight: 700;
 
