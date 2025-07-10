@@ -1,20 +1,24 @@
 import styles from "./Navigation.module.css";
 
 const navigation_links = [
-  { text: "Home", path: "#" },
-  { text: "O Firmie", path: "#onas" },
-  { text: "Oferta", path: "#oferta" },
-  { text: "Mobilna Wulkanizacja", path: "#mobilnawulkanizacja" },
-  { text: "Kontakt", path: "#kontakt" },
+  { text: "Home", path: "#", id: "home" },
+  { text: "O Firmie", path: "#onas", id: "onas" },
+  { text: "Oferta", path: "#oferta", id: "oferta" },
+  {
+    text: "Mobilna Wulkanizacja",
+    path: "#mobilnawulkanizacja",
+    id: "mobilna-wulkanizacja",
+  },
+  { text: "Kontakt", path: "#kontakt", id: "kontakt" },
 ];
 
 function Navigation() {
   return (
-    <nav className={styles.nav}>
+    <nav id="mainNav" className={styles.nav}>
       <ul className={styles.list}>
         {navigation_links.map((link) => (
           <li className={styles.item} key={link.path}>
-            <a className={styles.link} href={link.path}>
+            <a id={link.id} className={styles.link} href={link.path}>
               {link.text}
             </a>
           </li>
