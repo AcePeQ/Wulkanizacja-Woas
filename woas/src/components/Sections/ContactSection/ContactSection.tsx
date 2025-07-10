@@ -7,7 +7,7 @@ import styles from "./ContactSection.module.css";
 
 function ContactSection() {
   return (
-    <Section sectionClass="contact" overlay="light">
+    <Section sectionId="kontakt" sectionClass="contact" overlay="light">
       <div className={styles.container}>
         <article className={styles.contact}>
           <h2>

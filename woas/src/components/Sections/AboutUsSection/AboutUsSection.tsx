@@ -12,7 +12,7 @@ const counters = [
 
 function AboutUsSection() {
   return (
-    <Section sectionClass="aboutus" overlay="light">
+    <Section sectionId="onas" sectionClass="aboutus" overlay="light">
       <div className={styles.container}>
         <article className={styles.article}>
           <div className={styles.aboutus}>

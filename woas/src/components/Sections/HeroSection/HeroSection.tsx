@@ -3,10 +3,11 @@ import styles from "./HeroSection.module.css";
 import AnimatedHeading from "../../AnimatedHeader/AnimatedHeading";
 import Section from "../../Section/Section";
 import { motion } from "motion/react";
+import Button from "../../Button/Button";
 
 function HeroSection() {
   return (
-    <Section sectionClass="hero" overlay="dark">
+    <Section sectionId="home" sectionClass="hero" overlay="dark">
       <div className={styles.container}>
         <AnimatedHeading />
         <h1 className="sr_only">Wulkanizacja WOAS</h1>
@@ -25,6 +26,12 @@ function HeroSection() {
           Najlepsza wulkanizacja w Kałuszynie <br />
           Przyjedz do nas lub zadzwoń a to my przybędziemy z pomocą
         </motion.h2>
+
+        <p className={styles.buttonWrapper}>
+          <Button buttonContainer="a" href="#kontakt" buttonStyle="primary">
+            Zadzwoń Teraz
+          </Button>
+        </p>
       </div>
     </Section>
   );
