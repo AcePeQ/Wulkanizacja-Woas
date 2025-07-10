@@ -23,7 +23,7 @@ function Header() {
       });
 
       navLinksNodes?.forEach((navLink) => {
-        if (navLink.id.includes(currentSection)) {
+        if (navLink.href.includes(`#${currentSection}`)) {
           document.querySelector(".active")?.classList.remove("active");
           navLink.classList.add("active");
         }
@@ -32,7 +32,7 @@ function Header() {
 
     checkActiveSection();
 
-    window.addEventListener("scroll", checkActiveSection);
+    window.addEventListener("scroll", checkActiveSection, { passive: true });
 
     return () => window.removeEventListener("scroll", checkActiveSection);
   }, []);
