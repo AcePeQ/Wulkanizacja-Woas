@@ -12,6 +12,8 @@
   padding: 1.5rem 3rem;
 
   transition: background-color 0.3s;
+
+  z-index: 100000;
 }
 
 .top {

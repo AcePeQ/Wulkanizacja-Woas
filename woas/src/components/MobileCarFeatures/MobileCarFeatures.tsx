@@ -38,7 +38,7 @@ function MobileCarFeatures() {
     <ul className={styles.list}>
       {mobileCarFeatures.map((feature) => {
         return (
-          <li className={styles.item}>
+          <li key={feature.title} className={styles.item}>
             {feature.icon}
             <h3>
               {feature.title}
