@@ -1,0 +1,16 @@
+.imageWrapper {
+  align-self: stretch;
+  flex: 1;
+
+  background-color: #e6e9ef;
+  border-radius: 66px 18px 66px 18px;
+  box-shadow: 9px 9px 0px 0px var(--color-background-2),
+    18px 18px 0px 0px var(--color-accent-1);
+
+  overflow: hidden;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}

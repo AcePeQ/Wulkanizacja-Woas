@@ -1,7 +1,15 @@
 import AnimatedLine from "../../AnimatedLine/AnimatedLine";
+import ImageSlider from "../../ImageSlider/ImageSlider";
 import MobileCarFeatures from "../../MobileCarFeatures/MobileCarFeatures";
 import Section from "../../Section/Section";
 import styles from "./MobileCarSection.module.css";
+
+const mobileCarImages = [
+  { id: 1, path: "/mobilecar/mcar-1", alt: "", format: "jpg" },
+  { id: 2, path: "/mobilecar/mcar-2", alt: "", format: "jpg" },
+  { id: 3, path: "/mobilecar/mcar-3", alt: "", format: "jpg" },
+  { id: 4, path: "/mobilecar/mcar-4", alt: "", format: "jpg" },
+];
 
 function MobileCarSection() {
   return (
@@ -26,9 +34,7 @@ function MobileCarSection() {
           <MobileCarFeatures />
         </article>
 
-        <figure className={styles.imageWrapper}>
-          <img src="about-us-bg.jpg" />
-        </figure>
+        <ImageSlider images={mobileCarImages} />
       </div>
     </Section>
   );
