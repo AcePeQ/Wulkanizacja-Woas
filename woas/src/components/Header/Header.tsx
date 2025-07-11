@@ -32,7 +32,7 @@ function Header() {
 
     checkActiveSection();
 
-    window.addEventListener("scroll", checkActiveSection, { passive: true });
+    window.addEventListener("scroll", checkActiveSection);
 
     return () => window.removeEventListener("scroll", checkActiveSection);
   }, []);

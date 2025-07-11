@@ -1,0 +1,50 @@
+.tabs {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.tabButton {
+  width: 100%;
+  height: 100%;
+
+  font-size: 2.4rem;
+  font-weight: 500;
+
+  background: none;
+  border: none;
+  color: var(--color-text-1);
+
+  background-position: 100% 100%;
+  background-size: 200% 100%;
+  background-image: linear-gradient(
+    to right,
+    var(--color-accent-1) 50%,
+    var(--color-background-2) 50%
+  );
+
+  padding: 1.5rem 6rem 1.5rem 1.5rem;
+
+  clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+
+  cursor: pointer;
+
+  position: relative;
+
+  transition: all 0.8s;
+}
+
+.tabButton:hover,
+.tabButton:focus,
+.tabButton:active {
+  background-position: 0% 100%;
+
+  color: var(--color-background-1);
+}
+
+.tabActive {
+  background-position: 0% 100%;
+  color: var(--color-background-1);
+}
