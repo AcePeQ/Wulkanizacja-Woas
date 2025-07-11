@@ -6,14 +6,15 @@ import styles from "./OfferSection.module.css";
 function OfferSection() {
   return (
     <Section sectionId="oferta" sectionClass="offer" overlay="light">
-      <div className={styles.container}>
+      <>
         <h2 className={styles.heading}>
           Oferta
           <AnimatedLine />
         </h2>
-
-        <Offer />
-      </div>
+        <div className={styles.container}>
+          <Offer />
+        </div>
+      </>
     </Section>
   );
 }

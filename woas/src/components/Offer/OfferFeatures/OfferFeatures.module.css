@@ -1,0 +1,17 @@
+.offerFeatures {
+  column-count: 2;
+  column-gap: 4rem;
+
+  padding-left: 6rem;
+
+  padding: 2rem 2.5rem 2rem 6rem;
+}
+
+.item {
+  font-size: 2.2rem;
+  padding: 0.5rem 0;
+}
+
+.item::marker {
+  color: var(--color-accent-1);
+}

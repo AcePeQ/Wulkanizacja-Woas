@@ -9,8 +9,8 @@ function Main() {
     <main>
       <HeroSection />
       <AboutUsSection />
-      <MobileCarSection />
       <OfferSection />
+      <MobileCarSection />
       <ContactSection />
     </main>
   );
