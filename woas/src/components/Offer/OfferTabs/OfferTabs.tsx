@@ -17,7 +17,15 @@ function OfferTabs({
   return (
     <ul className={styles.tabs}>
       {offerTabs.map((tab) => (
-        <li key={tab.id} className={styles.tabItem}>
+        <li
+          key={tab.id}
+          className={styles.tabItem}
+          style={{
+            zIndex: `${
+              activeTabIndex === tab.id ? "100" : offerTabs.length - tab.id
+            }`,
+          }}
+        >
           <button
             onClick={() => onSetActiveTab(tab.id)}
             className={`${styles.tabButton} ${
