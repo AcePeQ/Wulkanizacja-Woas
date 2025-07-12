@@ -25,3 +25,12 @@
     fill-opacity: 1;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .svg path {
+    stroke-dasharray: 350;
+    stroke-dashoffset: 350;
+
+    stroke-width: 2px;
+  }
+}
