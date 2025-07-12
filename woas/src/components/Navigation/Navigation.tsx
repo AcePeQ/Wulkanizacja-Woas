@@ -13,9 +13,12 @@ const navigation_links = [
   { text: "Kontakt", path: "#kontakt", id: "kontakt" },
 ];
 
-function Navigation() {
+function Navigation({ isMenuOpen }: { isMenuOpen?: boolean }) {
   return (
-    <nav id="mainNav" className={styles.nav}>
+    <nav
+      id="mainNav"
+      className={`${styles.nav} ${styles[isMenuOpen ? "navOpen" : ""]}`}
+    >
       <ul className={styles.list}>
         {navigation_links.map((link) => (
           <li className={styles.item} key={link.path}>

@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 
 import { useMediaQuery } from "react-responsive";
+import MobileHeader from "./components/MobileHeader/MobileHeader";
 
 function App() {
   const isTabletOrMobile = useMediaQuery({
@@ -11,7 +12,7 @@ function App() {
 
   return (
     <>
-      {isTabletOrMobile ? null : <Header />}
+      {isTabletOrMobile ? <MobileHeader /> : <Header />}
 
       <Main />
       <Footer />

@@ -31,7 +31,29 @@
   box-shadow: 0 4px 8px var(--color-accent-1);
 }
 
-.button:hover svg,
-.button:active svg {
+.primary:hover svg,
+.primary:active svg {
   transform: scale(1.1) rotate(30deg);
+}
+
+.menu {
+  padding: 1rem;
+
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 4px;
+
+  background-color: var(--color-accent-1);
+  color: var(--color-text-3);
+
+  cursor: pointer;
+
+  gap: 1rem;
+
+  transition: all 0.4s;
+
+  svg {
+    transition: all 0.4s;
+    color: inherit;
+  }
 }
