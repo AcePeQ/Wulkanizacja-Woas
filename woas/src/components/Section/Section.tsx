@@ -1,5 +1,6 @@
 import type { ReactElement } from "react";
 import styles from "./Section.module.css";
+import { Element } from "react-scroll";
 
 type SectionProps = {
   children: ReactElement;
@@ -10,14 +11,16 @@ type SectionProps = {
 
 function Section({ children, sectionClass, overlay, sectionId }: SectionProps) {
   return (
-    <section
-      id={sectionId}
-      className={`${styles.section} ${styles[sectionClass]} ${
-        overlay ? styles[overlay] : ""
-      }`}
-    >
-      {children}
-    </section>
+    <Element name={sectionId}>
+      <section
+        id={sectionId}
+        className={`${styles.section} ${styles[sectionClass]} ${
+          overlay ? styles[overlay] : ""
+        }`}
+      >
+        {children}
+      </section>
+    </Element>
   );
 }
 

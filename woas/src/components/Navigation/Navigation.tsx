@@ -1,4 +1,5 @@
 import styles from "./Navigation.module.css";
+import { Link } from "react-scroll";
 
 const navigation_links = [
   { text: "Home", path: "#home", id: "home" },
@@ -18,9 +19,18 @@ function Navigation() {
       <ul className={styles.list}>
         {navigation_links.map((link) => (
           <li className={styles.item} key={link.path}>
-            <a className={styles.link} href={link.path}>
+            <Link
+              to={link.id}
+              activeClass="active"
+              smooth={true}
+              spy={true}
+              className={styles.link}
+              href={link.path}
+              duration={3}
+              offset={-200}
+            >
               {link.text}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
