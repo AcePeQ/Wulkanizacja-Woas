@@ -72,3 +72,19 @@
   );
   border-image-slice: fill 1;
 }
+
+@media screen and (max-width: 1500px) {
+  .contact {
+    padding: 15rem 4rem calc(15rem + var(--footer-height));
+  }
+
+  .mobilecar {
+    padding: 15rem 4rem;
+  }
+}
+
+@media screen and (max-width: 12400px) {
+  .contact {
+    padding: 15rem 0rem calc(15rem + var(--footer-height));
+  }
+}

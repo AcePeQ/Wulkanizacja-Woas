@@ -47,3 +47,35 @@
 
   margin-top: 6.5rem;
 }
+
+@media screen and (max-width: 1250px) {
+  .article {
+    flex-direction: column;
+    gap: 5rem;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imageWrapper {
+    max-width: 75ch;
+    margin: 0 auto;
+  }
+
+  .counters {
+    margin-top: 8rem;
+
+    max-width: 75ch;
+    margin: 6.5rem auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    justify-content: center;
+    align-items: center;
+
+    align-content: center;
+
+    gap: 2rem;
+  }
+}

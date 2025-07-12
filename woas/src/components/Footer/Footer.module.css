@@ -58,3 +58,13 @@
 .madeByLink:active {
   color: var(--color-accent-1);
 }
+
+@media screen and (max-width: 1380px) {
+  .left {
+    padding-inline: 4rem;
+  }
+
+  .right {
+    padding-inline: 4rem;
+  }
+}
