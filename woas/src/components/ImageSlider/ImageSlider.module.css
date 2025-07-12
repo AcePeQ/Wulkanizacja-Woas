@@ -39,3 +39,9 @@
     }
   }
 }
+
+@media screen and (max-width: 565px) {
+  .imageWrapper {
+    height: 50rem;
+  }
+}

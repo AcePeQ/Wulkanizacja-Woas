@@ -39,3 +39,14 @@
     font-size: 1.8rem;
   }
 }
+
+@media screen and (max-width: 655px) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+
+  .item {
+    max-width: 40rem;
+    margin-inline: auto;
+  }
+}
