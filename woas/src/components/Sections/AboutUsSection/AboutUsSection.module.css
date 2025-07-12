@@ -79,3 +79,21 @@
     gap: 2rem;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .container {
+    padding-inline: 4rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .counters {
+    align-items: start;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .counters {
+    grid-template-columns: 1fr;
+  }
+}
