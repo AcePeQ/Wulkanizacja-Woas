@@ -21,8 +21,6 @@
   .offer {
     grid-template-columns: 1fr;
     column-gap: 0;
-
-    row-gap: 2.5rem;
   }
 }
 

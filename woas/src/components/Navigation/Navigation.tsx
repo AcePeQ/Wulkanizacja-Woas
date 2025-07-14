@@ -30,7 +30,7 @@ function Navigation({ isMenuOpen }: { isMenuOpen?: boolean }) {
               className={styles.link}
               href={link.path}
               duration={3}
-              offset={-200}
+              offset={-100}
             >
               {link.text}
             </Link>

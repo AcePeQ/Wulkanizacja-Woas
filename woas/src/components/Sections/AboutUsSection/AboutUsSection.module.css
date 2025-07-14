@@ -96,4 +96,8 @@
   .counters {
     grid-template-columns: 1fr;
   }
+
+  .container {
+    padding-inline: 0;
+  }
 }

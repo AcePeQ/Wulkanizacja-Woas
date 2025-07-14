@@ -87,6 +87,11 @@
 
     clip-path: unset;
   }
+
+  .tabActive {
+    background-position: 0% 100%;
+    color: var(--color-background-1);
+  }
 }
 
 @media screen and (max-width: 900px) {
