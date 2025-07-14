@@ -7,4 +7,27 @@
   column-gap: 5rem;
 
   overflow: hidden;
+
+  position: relative;
+}
+
+@media screen and (max-width: 1300px) {
+  .offer {
+    column-gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .offer {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+
+    row-gap: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .offer {
+    justify-items: center;
+  }
 }
