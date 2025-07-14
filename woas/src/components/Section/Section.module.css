@@ -19,7 +19,7 @@
 }
 
 .aboutus {
-  padding: 10rem 0;
+  padding: 10rem 4rem;
 }
 
 .contact {
@@ -83,7 +83,13 @@
   }
 }
 
-@media screen and (max-width: 12400px) {
+@media screen and (max-width: 1240px) {
+  .contact {
+    padding: 15rem 0rem calc(15rem + var(--footer-height));
+  }
+}
+
+@media screen and (max-width: 765px) {
   .contact {
     padding: 15rem 0rem calc(15rem + var(--footer-height));
   }

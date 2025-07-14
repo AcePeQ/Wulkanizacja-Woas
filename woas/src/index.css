@@ -15,6 +15,12 @@
   --footer-height: 100px;
 }
 
+@media screen and (max-width: 765px) {
+  :root {
+    --footer-height: 281px;
+  }
+}
+
 *,
 *::before,
 *::after {

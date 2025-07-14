@@ -97,7 +97,7 @@
   }
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1415px) {
   .container {
     border-radius: 0;
     box-shadow: 0 4px 12px rgba(34, 40, 49, 0.9);
@@ -110,6 +110,13 @@
 }
 
 @media screen and (max-width: 782px) {
+  .contact {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 765px) {
   .contact {
     grid-template-columns: 1fr;
     row-gap: 3rem;
