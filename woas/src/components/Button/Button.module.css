@@ -31,6 +31,13 @@
   box-shadow: 0 4px 8px var(--color-accent-1);
 }
 
+.primary:hover,
+.primary:active,
+.primary:focus {
+  background-color: var(--color-accent-2);
+  box-shadow: 0 4px 8px var(--color-accent-2);
+}
+
 .primary:hover svg,
 .primary:active svg {
   transform: scale(1.1) rotate(30deg);
@@ -56,4 +63,10 @@
     transition: all 0.4s;
     color: inherit;
   }
+}
+
+.menu:hover,
+.menu:active,
+.menu:focus {
+  background-color: var(--color-accent-2);
 }
