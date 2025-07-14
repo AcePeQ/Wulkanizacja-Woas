@@ -10,7 +10,6 @@ import { Menu } from "lucide-react";
 function MobileHeader() {
   const menuRef = useRef<HTMLDivElement | null>(null);
   const [isOnTop, setIsOnTop] = useState(true);
-
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -18,6 +17,8 @@ function MobileHeader() {
       const target = e.target as Node;
 
       if (!menuRef.current) return;
+
+      console.log(target);
 
       if (!menuRef.current.contains(target)) {
         setMenuOpen(false);
@@ -49,6 +50,10 @@ function MobileHeader() {
     setMenuOpen((prev) => !prev);
   }
 
+  function handleCloseMenu() {
+    setMenuOpen(false);
+  }
+
   return (
     <motion.header
       initial={{ y: "-100%" }}
@@ -63,7 +68,7 @@ function MobileHeader() {
           <Menu size={32} />
         </Button>
 
-        <Navigation isMenuOpen={isMenuOpen} />
+        <Navigation isMenuOpen={isMenuOpen} onCloseMenu={handleCloseMenu} />
       </div>
     </motion.header>
   );

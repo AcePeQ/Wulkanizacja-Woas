@@ -13,7 +13,13 @@ const navigation_links = [
   { text: "Kontakt", path: "#kontakt", id: "kontakt" },
 ];
 
-function Navigation({ isMenuOpen }: { isMenuOpen?: boolean }) {
+function Navigation({
+  isMenuOpen,
+  onCloseMenu,
+}: {
+  isMenuOpen?: boolean;
+  onCloseMenu?: () => void;
+}) {
   return (
     <nav
       id="mainNav"
@@ -31,6 +37,7 @@ function Navigation({ isMenuOpen }: { isMenuOpen?: boolean }) {
               href={link.path}
               duration={3}
               offset={-100}
+              onClick={onCloseMenu}
             >
               {link.text}
             </Link>
